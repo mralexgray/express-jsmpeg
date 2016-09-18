@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/phoboslab/jsmpeg#readme",
   "dependencies": {
-    "ensure-array": "0.0.5"
+    "ensure-array": "0.0.5",
+    "fluent-ffmpeg": "^2.1.0"
   }
 }
