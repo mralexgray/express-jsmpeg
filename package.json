@@ -1,0 +1,22 @@
+{
+  "name": "jsmpeg",
+  "version": "1.0.0",
+  "description": "#### An MPEG1 Video Decoder in JavaScript ####",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "coffee examples/express/stream-server-express.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phoboslab/jsmpeg.git"
+  },
+  "author": "Alex Gray <alex@mrgray.com> (http://mrgray.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoboslab/jsmpeg/issues"
+  },
+  "homepage": "https://github.com/phoboslab/jsmpeg#readme",
+  "dependencies": {
+    "ensure-array": "0.0.5"
+  }
+}

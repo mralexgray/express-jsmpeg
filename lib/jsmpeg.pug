@@ -1,0 +1,11 @@
+
+script(src=jsmpegpath)
+canvas(id='videoCanvas' width=jsmpegwidth height=jsmpegheight)
+script.
+	$(function(){
+		
+		var client = new WebSocket( 'ws://127.0.0.1:' + '#{jsmpegwsport}' );
+		var player = new jsmpeg(client, {canvas:document.getElementById('videoCanvas')})
+		//- $('canvas').eq[0]});
+							
+	})
