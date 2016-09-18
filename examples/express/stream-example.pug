@@ -1,20 +1,18 @@
 doctype html
 html
   head
-    //- meta(name='viewport', content='width=320, initial-scale=1')
-    title jsmpeg streaming
-    style.
-      body {
-        background: #333;
-        text-align: center;
-        margin-top: 10%;
-      }
-      canvas {
-      /* Always stretch the canvas to 640x480, regardless of its
-      internal size. */
-      width: 640px;
-      height: 480px;
-      }
+    meta(name='viewport', content='width=320, initial-scale=1')
+    title express-jsmpeg streaming
+    style
+      :stylus
+        body
+          background hsl(17, 95%, 39%)
+          text-align center
+          margin-top 10%
+      canvas
+        // Always stretch the canvas to 640x480, regardless of its internal size.
+        width 640px
+        height 480px
     script(src='/jq')
   body
     include ../../lib/jsmpeg

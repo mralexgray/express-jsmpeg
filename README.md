@@ -1,6 +1,6 @@
-# jsmpeg
+# express-jsmpeg
 
-#### An MPEG1 Video Decoder in JavaScript ####
+#### Express Middleware providing MPEG1 Video Decoding via [jsmpeg] ####
 
 jsmpeg is a MPEG1 Decoder, written in JavaScript. It's "hand ported", i.e. not compiled with
 emscripten or similar. This will probably make it obsolete with the advent of asmjs.

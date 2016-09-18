@@ -72,7 +72,7 @@ class JSMPEG
 		
 		log "req.url is #{req.url}"
 		if '/jsmpeg' is req.url
-			res.sendFile path.join path.dirname(__dirname), 'jsmpg.js'
+			res.sendFile path.join path.dirname(__dirname), 'jsmpeg', 'jsmpg.js'
 		else
 			next()
 

@@ -1,6 +1,8 @@
 
-[jsmpeg,express,ffmpeg,jq] = 
-	require x for x in ['../..','express','fluent-ffmpeg','express-jquery']
+global[x] = require y.replace('@',x) for x,y of {
+	jsmpeg:'../..','express',ffmpeg:'fluent-@',jq:'express-@uery','morgan'
+}
+
 
 ffcmd = ffmpeg '1'
 .inputFormat 'avfoundation'
@@ -12,6 +14,7 @@ ffcmd = ffmpeg '1'
 .on 'error', (err) -> console.log "An error occurred: #{err.message}"
 
 app = express()
+app.use morgan 'dev'
 app.set 'view engine', 'pug'
 app.set 'views', __dirname
 app.use jq '/jq'
@@ -39,6 +42,10 @@ while true; do ffmpeg -f avfoundation -video_size 640x480 \
 	ffmpeg.getAvailableFilters (err, filters) ->
 	  console.log "Available filters:"
 	  console.dir filters
+	  
+# globaljsmpeg,express,ffmpeg,jq,morgan] = 
+# 	require x for x in []
+
 ###
 
 

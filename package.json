@@ -18,8 +18,16 @@
   },
   "homepage": "https://github.com/mralexgray/jsmpeg#readme",
   "dependencies": {
-    
+    "coffee-script": "^1.10.0",
     "ensure-array": "0.0.5",
-    "fluent-ffmpeg": "^2.1.0"
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "express-jquery": "^1.8.3",
+    "fluent-ffmpeg": "^2.1.0",
+    "jstransformer-stylus": "^1.1.0",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6"
   }
 }
