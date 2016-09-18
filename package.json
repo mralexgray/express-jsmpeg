@@ -1,22 +1,24 @@
 {
-  "name": "jsmpeg",
+  "name": "express-jsmpeg",
   "version": "1.0.0",
-  "description": "#### An MPEG1 Video Decoder in JavaScript ####",
+  "description": "#### Express Middleware providing MPEG1 Video Decoding ####",
   "main": "./lib/index.js",
   "scripts": {
+    "postinstall": "git submodule update --init --recursive",
     "test": "coffee examples/express/stream-server-express.coffee"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/phoboslab/jsmpeg.git"
+    "url": "git://github.com/mralexgray/express-jsmpeg.git"
   },
   "author": "Alex Gray <alex@mrgray.com> (http://mrgray.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phoboslab/jsmpeg/issues"
+    "url": "https://github.com/mralexgray/express-jsmpeg/issues"
   },
-  "homepage": "https://github.com/phoboslab/jsmpeg#readme",
+  "homepage": "https://github.com/mralexgray/jsmpeg#readme",
   "dependencies": {
+    
     "ensure-array": "0.0.5",
     "fluent-ffmpeg": "^2.1.0"
   }
